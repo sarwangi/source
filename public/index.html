@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
+    <meta name="author" content="Ansonika">
+    <title>Ensober Hotel</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<!-- Calendar -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/calendar_style.css">
+	
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- COMMON CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	
+	<!-- CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+	
+	<!-- ENSOBER CUSTOM CSS -->
+	<link href="css/ensober_custom.css" rel="stylesheet">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+	
+	<style>
+		div#TA_selfserveprop584 {
+			width: 49%;
+			display: inline-block;
+			overflow: hidden;
+			height: 209px;
+			background-color: #fff;
+			vertical-align: top;
+		}
+		div#TA_selfserveprop584 div#CDSWIDSSP {
+			height: 100%;
+			width: 100% !important;
+		}
+		div#TA_cdswritereviewlg330 {
+			display: inline-block;
+			width: 50%;
+			vertical-align: top;
+		}
+		div#TA_cdswritereviewlg330 div#CDSWIDWRL {
+			width: 100% !important;
+		}
+		.review-widget_net {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body class="datepicker_mobile_full">
+    <div id="root"></div>
+    
+    <div id="toTop"></div><!-- Back to top button -->
+	
+
+    <!-- Calendar -->
+    <script src="js/main.js"></script>
+    <script src="js/popper.js"></script>
+    
+    <!-- Common scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    
+    <!-- Custom js -->
+    <script src="js/ensober_script.js"></script>
+    
+    <!-- Gallery -->
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function ($) {
+        $('#Img_carousel').sliderPro({
+          width: 960,
+          height: 500,
+          fade: true,
+          arrows: true,
+          buttons: false,
+          fullScreen: false,
+          smallSize: 500,
+          startSlide: 0,
+          mediumSize: 1000,
+          largeSize: 3000,
+          thumbnailArrows: true,
+          autoplay: false
+        });
+      });
+    </script>
+  
+      <!-- DATEPICKER  -->
+      <script>
+      $(function() {
+        'use strict';
+        $('input.date-pick').daterangepicker({
+            autoUpdateInput: false,
+            opens: 'left',
+            minDate:new Date(),
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+        $('input.date-pick').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
+        });
+        $('input.date-pick').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+      });
+      </script>
+    
+    <!-- Map -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>                      
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/infobox.js"></script>
+    
+    <!-- Carousel -->
+    <script>
+      $('.carousel-thumbs-2').owlCarousel({
+      loop:false,
+      margin:5,
+      responsiveClass:true,
+      nav:false,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:4,
+          nav:false
+        }
+      }
+    });
+    </script>
+  
+    <!--Review modal validation -->
+    <script src="assets/validate.js"></script>
+    
+  </body>
+  
+  </html>
